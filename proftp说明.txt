@@ -1,0 +1,8 @@
+ 在开发机上安装ftp。
+     1.下载ftp工具：wget ftp://10.64.36.223:/home/milin/tools/proftpd.tar.gz
+     2.解压：tar -xzvf proftpd.tar.gz
+     3.进入解压后文件夹：cd proftpd
+     4.执行初始化脚本：sh init.sh 设置ftp的登录密码。
+     5.ftp的默认端口是8021，如果被占用了，修改 etc/proftpd.conf配置里的端口
+     6.运行 sh start.sh脚本启动ftp
+     7.在浏览器里输入：ftp://10.138.56.55:8021    ip换成你的开发机ip，验证ftp是否可用
